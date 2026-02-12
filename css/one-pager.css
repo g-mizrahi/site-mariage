@@ -32,6 +32,7 @@ body {
 
 h1 {
 	font-size: 2.5rem;
+	padding-top: 2vh;
 }
 
 h2 {
@@ -41,37 +42,6 @@ h2 {
 .highlight {
 	color: var(--accent);
 	font-weight: 600;
-}
-
-nav {
-	width: 100%;
-	height: 10 vh;
-    display: block;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-	padding: 1rem;
-    background-color: var(--nav);
-}
-
-.nav > a {
-	font-family: "miama";
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    color: var(--text);
-	font-weight: 600;
-    font-size: 1.25rem;
-    padding: 0.2rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-.nav > a + a {
-	border-left: 1px solid var(--text);
 }
 
 #card {
@@ -245,119 +215,3 @@ nav {
 #logements {
 	width: 100%;
 }
-
-/*
-.hero h1 {
-	margin: 0;
-	font-size: 2.2rem;
-	opacity: 1;
-}
-
-
-
-.container {
-	max-width: 90%;
-}
-
-.container-90 {
-	max-width: 70%;
-	padding: 0 1rem;
-}
-
-#lieux {
-	margin-top: 5vw;
-}
-
-footer {
-	display: block;
-	text-align: center;
-	padding: 2rem;
-	font-size: Larger;
-	line-height: 1.6;
-}
-
-#rsvp {
-	color: var(--accent);
-	border-color: var(--accent);
-	background-color: var(--nav);
-	padding: 5px;
-	border-radius: 8px;
-	text-decoration: none;
-	font-weight: 600
-}
-
-.hour {
-	font-weight: bold;
-	color: var(--accent);
-}
-
-.map-pair {
-	display: flex;
-	grid-template-columns: 1fr;
-	gap: 1.2rem;
-}
-
-.map-block {
-	flex: 1;
-}
-
-.map-pair .map-block:first-child {
-	margin-right: 5vw;
-}
-
-.map-block iframe {
-	width: 100%;
-	height: 260px;
-	border: 0
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-	gap: 0.5rem;
-	width: 100%;
-	height: 160px;
-	object-fit: cover;
-	border-radius: 6px
-}
-
-@media(max-width:800px) {
-	.map-pair{
-		grid-template-columns: 1fr 1fr
-	}
-
-	nav {
-		padding: 0.5rem;
-	}
-
-	.nav > a {
-		display: inline;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		text-decoration: none;
-		color: var(--text);
-		font-weight: 600;
-		font-size: 3vmin;
-		padding: 0.2rem;
-	}
-
-	.hero {
-		height: 50vmax;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.hero h1 {
-		font-size: 1.5rem
-	}
-
-	.hero-image {
-		order: -1;
-		width: 100%;
-		height: auto;
-		max-height: max-content;
-		padding: 1vw;
-	}
-}
-*/
