@@ -163,6 +163,14 @@ nav {
 	margin-left: 10%;
 }
 
+#transports {
+	width: 100%;
+}
+
+#logements {
+	width: 100%;
+}
+
 /*
 .hero h1 {
 	margin: 0;
@@ -279,5 +287,5 @@ footer {
 		max-height: max-content;
 		padding: 1vw;
 	}
-	*/
 }
+*/
