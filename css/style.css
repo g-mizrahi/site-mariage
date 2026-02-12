@@ -1,0 +1,283 @@
+:root {
+    --bg: #FAF9EF;
+    --text: #4F6A5C;
+    --accent: #A23A4A;
+	--text_a: rgba(226, 241, 183, 0.25);
+	--nav: #E2F1B7;
+}
+
+@font-face {
+    font-family: 'Miama';
+    src: url('/assets/fonts/miama.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    border: solid 1px black;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-size: 1.25rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+.highlight {
+	color: var(--accent);
+	font-weight: 600;
+}
+
+nav {
+	width: 100%;
+    display: block;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	padding: 1rem;
+    background-color: var(--nav);
+}
+
+.nav > a {
+	font-family: "miama";
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+	font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0.2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.nav > a + a {
+	border-left: 1px solid var(--text);
+}
+
+.zone {
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-height: 70vmin;
+	overflow: hidden;
+}
+
+#welcome-text {
+	flex: 2;
+	height: 100%;
+	font-size: 1.25rem;
+	line-height: 1.6;
+	align-items: center;
+}
+
+#welcome-img {
+	flex: 1;
+	height: 100%;
+	max-width: 50vmin;
+	object-position: top center;
+	object-fit: contain;
+	padding-left: 2vw;
+}
+
+#conclusion {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+
+#conclusion > p {
+	flex: 2;
+}
+
+#rsvp {
+	flex: 1;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#rsvp-link {
+	color: var(--accent);
+	border-color: var(--accent);
+	background-color: var(--nav);
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600
+}
+
+.zone-text {
+	width: 75%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-height: 70vmin;
+	overflow: hidden;
+}
+
+#map-pair {
+	display: flex;
+	flex-direction: row;
+};
+
+.map-block {
+	flex: 1;
+	align-items: center;
+	object-position: center;
+}
+
+.map-block iframe {
+	/* padding: 5%; */
+	width: 100%;
+	aspect-ratio: 1/1;
+	max-width: 40vmin;
+	max-height: 40vmin;
+}
+
+.map-block + .map-block {
+	margin-left: 10%;
+}
+
+/*
+.hero h1 {
+	margin: 0;
+	font-size: 2.2rem;
+	opacity: 1;
+}
+
+.date {
+	font-weight: bold;
+	color: var(--accent);
+}
+
+.container {
+	max-width: 90%;
+}
+
+.container-90 {
+	max-width: 70%;
+	padding: 0 1rem;
+}
+
+#lieux {
+	margin-top: 5vw;
+}
+
+footer {
+	display: block;
+	text-align: center;
+	padding: 2rem;
+	font-size: Larger;
+	line-height: 1.6;
+}
+
+#rsvp {
+	color: var(--accent);
+	border-color: var(--accent);
+	background-color: var(--nav);
+	padding: 5px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600
+}
+
+.hour {
+	font-weight: bold;
+	color: var(--accent);
+}
+
+.map-pair {
+	display: flex;
+	grid-template-columns: 1fr;
+	gap: 1.2rem;
+}
+
+.map-block {
+	flex: 1;
+}
+
+.map-pair .map-block:first-child {
+	margin-right: 5vw;
+}
+
+.map-block iframe {
+	width: 100%;
+	height: 260px;
+	border: 0
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+	gap: 0.5rem;
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 6px
+}
+
+@media(max-width:800px) {
+	.map-pair{
+		grid-template-columns: 1fr 1fr
+	}
+
+	nav {
+		padding: 0.5rem;
+	}
+
+	.nav > a {
+		display: inline;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		text-decoration: none;
+		color: var(--text);
+		font-weight: 600;
+		font-size: 3vmin;
+		padding: 0.2rem;
+	}
+
+	.hero {
+		height: 50vmax;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero h1 {
+		font-size: 1.5rem
+	}
+
+	.hero-image {
+		order: -1;
+		width: 100%;
+		height: auto;
+		max-height: max-content;
+		padding: 1vw;
+	}
+	*/
+}
